@@ -17,6 +17,8 @@
 }
 
 body {
+   /* box-sizing: border-box; */
+
    background-color: var(--prime-bg-color);
    color: var(--prime-text-color);
    font-family: 'Roboto', sans-serif;
@@ -264,7 +266,7 @@ img {
 
    background-repeat: no-repeat;
    background-position: center;
-   /* background-size: cover; */
+   /* background-size: contain; */
 }
 
 .feature-list .item:nth-child(1)::before {
@@ -469,6 +471,10 @@ img {
    letter-spacing: 0.06em;
 }
 .examples-text {
+   margin-top: 4px;
+
    font-size: 16px;
    line-height: 1.88;
+
+   color: var(--prime-text-color);
 }
