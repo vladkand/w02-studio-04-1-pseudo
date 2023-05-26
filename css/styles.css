@@ -405,6 +405,10 @@ img {
    /* background-color: tomato; */
 }
 
+.soc-link:hover {
+   background-color: var(--accent-color);
+}
+
 .soc-link::before {
    content: '';
    width: 20px;
@@ -418,12 +422,15 @@ img {
 }
 
 .twit-link::before {
+   background-image: url(../images/icons/ico02-fb.svg);
 }
 
 .fb-link::before {
+   background-image: url(../images/icons/ico02-twit.svg);
 }
 
 .in-link::before {
+   background-image: url(../images/icons/ico04-in.svg);
 }
 
 /* ----------- */
