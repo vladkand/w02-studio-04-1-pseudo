@@ -12,6 +12,7 @@
    --btn-active-color: #188ce8;
    --logo-dark-color: #000000;
    --footer-link-color: rgba(255, 255, 255, 0.6);
+   --footer-link-bg: rgba(255, 255, 255, 0.1);
 
    /* --btn-bg-filter: #F5F4FA; */
 }
@@ -385,28 +386,31 @@ img {
 
 /* --- Cocial-list --- */
 
-.social {
+.social-box {
    margin-top: 16px;
 }
 .social-list {
    display: flex;
-   /* margin-top: 16px; */
-   justify-content: space-between;
+   justify-content: flex-start;
    align-items: center;
 }
 
+.social-list .item + .item {
+   margin-left: 10px;
+}
+
 .soc-link {
-   display: inline-flex;
+   display: flex;
    align-items: center;
    justify-content: center;
    width: 44px;
    height: 44px;
 
    border-radius: 50%;
-   /* background-color: tomato; */
+   outline: 1px solid tomato;
 }
 
-.soc-link:hover {
+.soc-link.link:hover {
    background-color: var(--accent-color);
 }
 
@@ -416,22 +420,6 @@ img {
    height: 20px;
 
    /* outline: 1px solid teal; */
-}
-
-.insta-link::before {
-   background-image: url(../images/icons/ico01-insta.svg);
-}
-
-.twit-link::before {
-   background-image: url(../images/icons/ico02-fb.svg);
-}
-
-.fb-link::before {
-   background-image: url(../images/icons/ico02-twit.svg);
-}
-
-.in-link::before {
-   background-image: url(../images/icons/ico04-in.svg);
 }
 
 /* ----------- */
@@ -465,41 +453,23 @@ img {
    border-radius: 4px;
 }
 
-.icon-client1::before {
-   background-image: url(../images/icons/client-1.svg);
-}
-
-.icon-client2::before {
-   background-image: url(../images/icons/client-2.svg);
-}
-
-.icon-client3::before {
-   background-image: url(../images/icons/client-3.svg);
-}
-
-.icon-client4::before {
-   background-image: url(../images/icons/client-4.svg);
-}
-
-.icon-client5::before {
-   background-image: url(../images/icons/client-5.svg);
-}
-
-.icon-client6::before {
-   background-image: url(../images/icons/client-6.svg);
-}
-
-/* FOOTER */
+/* ===== FOOTER ===== */
 .footer {
    padding-top: 60px;
    padding-bottom: 60px;
    background-color: var(--dark-bg-color);
 }
-/* --Logo-- */
+
+.footer-box {
+   display: flex;
+   align-items: baseline;
+}
+
+/* ----- Logo ----- */
 .part-light {
    color: var(--white-text-color);
 }
-/* --Address */
+/* ----- Address ----- */
 .address-footer {
    margin-top: 20px;
 
@@ -522,6 +492,30 @@ img {
 .footer-link:focus {
    color: var(--accent-color);
 }
+
+/* ----- SOCIAL-footer ----- */
+.soc-footer-box {
+   margin-left: 70px;
+}
+
+.join {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color: var(--white-text-color);
+}
+
+.social-box-footer {
+   margin-top: 20px;
+}
+
+.social-list-dark .soc-link {
+   background-color: var(--footer-link-bg);
+}
+
 /* ! --- STUDIO FIN --- */
 
 /* ===== PORTFOLIO ===== */
