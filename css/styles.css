@@ -175,7 +175,7 @@ img {
 }
 
 .contaсt-list .link {
-   display: inline-flex;
+   display: flex;
    font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
@@ -188,13 +188,14 @@ img {
    width: 16px;
    height: 16px;
    margin-right: 10px;
-   background-position: right;
+   background-position: center;
    background-size: contain;
    background-repeat: no-repeat;
+   /* background-color: #757575; */
 }
 
 .mail-link::before {
-   background-image: url(../images/icons/h-maile.svg);
+   background-image: url(../images/icons/h-mail.svg);
 }
 
 .tel-link::before {
