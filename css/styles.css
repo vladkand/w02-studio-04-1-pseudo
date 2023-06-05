@@ -414,13 +414,15 @@ img {
    background-color: var(--accent-color);
 }
 
+/* 
 .soc-link::before {
    content: '';
    width: 20px;
    height: 20px;
 
    /* outline: 1px solid teal; */
-}
+} */
+
 
 /* ----------- */
 
