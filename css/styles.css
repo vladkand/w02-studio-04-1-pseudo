@@ -410,7 +410,7 @@ img {
    outline: 1px solid tomato;
 }
 
-.soc-link.link:hover {
+.soc-link:hover {
    background-color: var(--accent-color);
 }
 
@@ -488,10 +488,11 @@ img {
    color: var(--footer-link-color);
 }
 
+/* 
 .footer-link:hover,
 .footer-link:focus {
    color: var(--accent-color);
-}
+} */
 
 /* ----- SOCIAL-footer ----- */
 .soc-footer-box {
@@ -514,6 +515,22 @@ img {
 
 .social-list-dark .soc-link {
    background-color: var(--footer-link-bg);
+}
+
+.soc-link .ico {
+   width: 20px;
+   height: 20px;
+}
+
+.social-list .item:nth-child(2) .link::before {
+   content: '';
+   display: block;
+   width: 20px;
+   height: 20px;
+   background-image: url(../images/icons/fb.svg);
+
+   background-position: center;
+   background-size: cover;
 }
 
 /* ! --- STUDIO FIN --- */
