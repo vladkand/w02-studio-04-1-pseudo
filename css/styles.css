@@ -410,19 +410,17 @@ img {
    outline: 1px solid tomato;
 }
 
-.soc-link:hover {
+.social-list .soc-link:hover {
    background-color: var(--accent-color);
 }
 
-/* 
 .soc-link::before {
-   content: '';
+   /* content: ''; */
    width: 20px;
    height: 20px;
 
    /* outline: 1px solid teal; */
-} */
-
+}
 
 /* ----------- */
 
@@ -490,11 +488,10 @@ img {
    color: var(--footer-link-color);
 }
 
-/* 
 .footer-link:hover,
 .footer-link:focus {
    color: var(--accent-color);
-} */
+}
 
 /* ----- SOCIAL-footer ----- */
 .soc-footer-box {
@@ -516,19 +513,27 @@ img {
 }
 
 .social-list-dark .soc-link {
+   color: #fff;
+   fill: tomato;
    background-color: var(--footer-link-bg);
 }
 
 .soc-link .ico {
-   width: 20px;
-   height: 20px;
+   /* fill: var(--white-text-color); */
+}
+
+/* ----- HOVER ----- */
+.social-list-dark .soc-link:hover {
+   background-color: tomato;
+   /* color: tomato; */
+   fill: #000;
+   /* background-color: teal; */
 }
 
 .social-list .item:nth-child(2) .link::before {
    content: '';
    display: block;
-   width: 20px;
-   height: 20px;
+
    background-image: url(../images/icons/fb.svg);
 
    background-position: center;
