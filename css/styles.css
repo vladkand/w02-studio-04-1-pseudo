@@ -513,21 +513,22 @@ img {
 }
 
 .social-list-dark .soc-link {
+   /*  этот цвет унаследует иконка */
    color: #fff;
-   fill: tomato;
+
    background-color: var(--footer-link-bg);
 }
 
 .soc-link .ico {
-   /* fill: var(--white-text-color); */
+   /* --- color наследует от ссылки --- */
+   fill: currentColor;
 }
 
-/* ----- HOVER ----- */
+/* ----- при HOVER на ссылку ----- */
+/* ----- иконка тоже меняет цвет ----- */
 .social-list-dark .soc-link:hover {
-   background-color: tomato;
-   /* color: tomato; */
-   fill: #000;
-   /* background-color: teal; */
+   color: #000;
+   background-color: #fff;
 }
 
 .social-list .item:nth-child(2) .link::before {
@@ -539,8 +540,7 @@ img {
    background-position: center;
    background-size: cover;
 }
-
-/* ! --- STUDIO FIN --- */
+/* -----------------------------------------------   */
 
 /* ===== PORTFOLIO ===== */
 
